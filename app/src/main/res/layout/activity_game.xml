@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GameActivity">
+
+    <GridLayout
+        android:columnCount="3"
+        android:layout_width="match_parent"
+        android:layout_marginTop="100sp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textPartA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:text="TextView"
+            android:layout_column="0"
+            app:layout_constraintEnd_toStartOf="@+id/textOperation" />
+
+        <TextView
+            android:id="@+id/textOperation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:text="TextView"
+            android:layout_column="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textPartA"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textPartB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:textSize="16dp"
+            android:layout_columnWeight="1"
+            android:textAlignment="center"
+            android:text="TextView"
+            android:layout_column="2"
+            app:layout_constraintEnd_toStartOf="@+id/textOperation" />
+
+    </GridLayout>
+
+    <TextView
+        android:layout_marginTop="80sp"
+        android:textSize="18pt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="=" />
+
+    <GridLayout
+        android:columnCount="3"
+        android:layout_width="match_parent"
+        android:layout_marginTop="100sp"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/buttonChoice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:text="TextView"
+            android:layout_column="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textPartA"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/buttonChoice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:text="TextView"
+            android:layout_column="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textPartA"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/buttonChoice3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:text="TextView"
+            android:layout_column="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textPartA"
+            app:layout_constraintVertical_bias="1.0" />
+    </GridLayout>
+
+    <GridLayout
+        android:columnCount="2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40sp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textScore"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:text="Score:"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/textOperation" />
+
+        <TextView
+            android:id="@+id/textLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:text="Level:"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/textOperation" />
+
+
+    </GridLayout>
+
+</LinearLayout>
